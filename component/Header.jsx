@@ -13,7 +13,7 @@ export default function Header() {
     <header className="w-full flex flex-wrap items-center justify-between bg-white text-black dark:bg-[#0f172a] dark:text-white border-b border-gray-200 dark:border-gray-700 px-4 py-3 sticky top-0 z-40">
       <div className="flex items-center gap-3 min-w-0">
         <Image src={logo} alt="Logo" width={30} height={30} className="shrink-0" />
-        <h1 className="text-lg md:text-xl font-bold truncate">
+        <h1 className="text-lg md:text-xl font-nexa font-bold text-[#5f259f] dark:text-white truncate">
           Quantic Factory Test
         </h1>
       </div>

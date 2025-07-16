@@ -87,9 +87,9 @@ export default function EspaceVertTab() {
         </select>
       </div>
 
-      <Accordion type="multiple" className="w-full space-y-2">
+      <Accordion type="multiple" className="w-full space-y-3">
         {filteredEspaces.map((e) => (
-          <AccordionItem key={e.identifiant} value={e.identifiant} className="border rounded">
+          <AccordionItem key={e.identifiant} value={e.identifiant} className="border rounded p-4">
             <AccordionTrigger>{e.nom}</AccordionTrigger>
             <AccordionContent>
               <div className="space-y-1 text-sm">

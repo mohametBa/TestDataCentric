@@ -9,14 +9,20 @@
 
 @font-face {
   font-family: 'Nexa';
-  src: url('/fonts/nexa/Nexa-Regular.ttf') format('truetype');
+  src: url('/fonts/Nexa-Regular.woff2') format('woff2'),
+       url('/fonts/Nexa-Regular.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Nexa';
-  src: url('/fonts/nexa/Nexa-Bold.ttf') format('truetype');
+  src: url('/fonts/Nexa-Bold.woff2') format('woff2'),
+       url('/fonts/Nexa-Bold.woff') format('woff');
   font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 

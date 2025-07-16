@@ -68,11 +68,11 @@ export default function ActivityTab() {
 
   return (
     <div className="p-4 space-y-6 bg-white text-primary dark:bg-gray-900 dark:text-white transition-colors duration-300">
-      <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
+      <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
         <select
           value={typeFilter}
           onChange={(e) => setTypeFilter(e.target.value)}
-          className="border px-3 py-2 rounded"
+          className="border px-3 py-2 rounded w-full md:w-1/2 dark:bg-gray-800 dark:text-white"
         >
           <option value="">Tous les types</option>
           {types.map((type) => (
@@ -96,15 +96,15 @@ export default function ActivityTab() {
         {filtered.map((activity, index) => (
           <Card
             key={index}
-            className="border border-[#5f259f] dark:border-purple-300 bg-white dark:bg-gray-800 text-primary dark:text-white rounded-lg transition-colors duration-300"
+            className="border border-[#5f259f] font-nexa dark:border-purple-300 bg-white dark:bg-gray-800 dark:text-white rounded-lg transition-colors duration-300"
           >
             <CardHeader>
-              <CardTitle className="text-[#5f259f] dark:text-white" >{activity.nom || "Nom non précisé"}</CardTitle>
+              <CardTitle className=" text-[#5f259f] dark:text-white " >{activity.nom || "Nom non précisé"}</CardTitle>
               <CardDescription>
                 {activity.type || "Type inconnu"}
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-1 text-sm text-gray-700 dark:text-gray-200">
+            <CardContent className="space-y-1 text-sm font-nexa dark:text-gray-200">
               <p>
                 <strong>Adresse :</strong> {activity.adresse || "Non précisée"}
               </p>

@@ -87,7 +87,7 @@ export default function FontaineTab() {
         </select>
       </div>
 
-      <Accordion type="multiple" className="w-full space-y-2">
+      <Accordion type="multiple" className="w-full space-y-3 border rounded p-3">
         {filteredData.map((item, index) => (
           <AccordionItem key={item.recordid} value={`item-${index}`}>
             <AccordionTrigger>
