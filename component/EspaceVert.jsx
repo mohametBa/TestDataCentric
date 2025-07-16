@@ -58,7 +58,7 @@ export default function EspaceVertTab() {
     );
   });
   return (
-    <div className="p-4 space-y-6 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <div className="p-2 space-y-6 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
       <div className="flex flex-wrap gap-4">
         <select
           className="border px-4 py-2 rounded"
@@ -87,10 +87,10 @@ export default function EspaceVertTab() {
         </select>
       </div>
 
-      <Accordion type="multiple" className="w-full space-y-3">
+      <Accordion type="multiple" className="w-full space-y-2 rounded p-3">
         {filteredEspaces.map((e) => (
-          <AccordionItem key={e.identifiant} value={e.identifiant} className="border rounded p-4">
-            <AccordionTrigger>{e.nom}</AccordionTrigger>
+          <AccordionItem key={e.identifiant} value={e.identifiant} className="rounded p-2 border border-gray-200 dark:border-gray-700">
+            <AccordionTrigger className="text-purple-700 border p-3 border-[#5f259f] dark:text-purple-400 font-semibold" >{e.nom}</AccordionTrigger>
             <AccordionContent>
               <div className="space-y-1 text-sm">
                 <p><strong>Type :</strong> {e.type}</p>

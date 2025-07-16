@@ -71,7 +71,7 @@ export default function FontaineTab() {
           placeholder="Rechercher une rue..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="border px-3 py-2 rounded w-full md:w-1/2"
+          className="border-purple-700 p-2 dark:text-purple-400 font-semibold px-2 py-2 rounded w-full md:w-1/2"
         />
         <select
           value={selectedCommune}
@@ -87,10 +87,10 @@ export default function FontaineTab() {
         </select>
       </div>
 
-      <Accordion type="multiple" className="w-full space-y-3 border rounded p-3">
+      <Accordion type="multiple" className="w-full space-y-3 rounded p-3">
         {filteredData.map((item, index) => (
           <AccordionItem key={item.recordid} value={`item-${index}`}>
-            <AccordionTrigger>
+            <AccordionTrigger className="text-purple-700 border p-3 border-[#5f259f] dark:text-purple-400 font-semibold">
               {item.fields.voie || "Nom inconnu"}
             </AccordionTrigger>
             <AccordionContent>

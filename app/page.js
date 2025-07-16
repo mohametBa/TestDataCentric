@@ -27,7 +27,6 @@ export default function Dashboard() {
           </p>
         </div>
 
-        {/* les Onglets qui recuperer les données de l'api */}
         <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8">
           {tabs.map((tab) => (
             <button

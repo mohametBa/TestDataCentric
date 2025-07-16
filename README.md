@@ -33,6 +33,7 @@ Toutes les données sont issues de [opendata.paris.fr](https://opendata.paris.fr
 - Librairie JS : React
 - Style : [Tailwind CSS](https://tailwindcss.com/)
 - Composants UI : [shadcn/ui](https://ui.shadcn.com/)
+- Font : Nexa (https://www.dafont.com/nexa.font)
 - Cartes : [React Leaflet](https://react-leaflet.js.org/)
 - Langage : JavaScript (client-side)
 
@@ -51,9 +52,41 @@ Toutes les données sont issues de [opendata.paris.fr](https://opendata.paris.fr
 
  ▶️ Installation
 
-```bash
+
 git clone https://github.com/-------------------------------
 cd --------
 npm install
 npm run dev
 
+
+QUANTICFACTORY/
+├── .next/                 
+├── app/                 
+│   ├── favicon.ico        
+│   ├── globals.css          
+│   ├── layout.js           
+│   ├── page.js             
+│   └── component/          
+│       ├── Activity.jsx
+│       ├── EspaceVert.jsx
+│       ├── Fontaine.jsx
+│       └── Header.jsx
+├── components/
+│   └── ui/                
+├── context/
+│   └── ThemeContext.js     
+├── error/
+│   └── handleError.js     
+├── lib/                   
+├── node_modules/        
+├── public/               
+├── .env.local             
+├── .gitignore             
+├── components.json        
+├── eslint.config.mjs      
+├── jsconfig.json          
+├── next.config.mjs       
+├── package.json          
+├── package-lock.json     
+├── postcss.config.mjs    
+├── tailwind.config.js    

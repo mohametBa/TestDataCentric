@@ -1,4 +1,4 @@
-// On selection le filtre selon le type d'activité et le statut payant ou gratuite 
+// On selection le filtre selon le type d'activité et le statut payant ou gratuite
 // si aucun filtre n'est selectionné on affiche toutes les activités
 // on utilise useState pour gérer l'état des filtres et useEffect pour filtrer les données
 // on utilise fetchActivities pour récupérer les données depuis l'API
@@ -60,7 +60,10 @@ export default function ActivityTab() {
   }, [payantFilter, typeFilter, data]);
 
   if (loading) return <p className="p-4">Chargement des activités...</p>;
-  if (error) return <p className="text-red-600">Erreur de chardement des données : {error}</p>;
+  if (error)
+    return (
+      <p className="text-red-600">Erreur de chardement des données : {error}</p>
+    );
 
   const types = Array.from(
     new Set(data.map((a) => a.type).filter(Boolean))
@@ -96,10 +99,12 @@ export default function ActivityTab() {
         {filtered.map((activity, index) => (
           <Card
             key={index}
-            className="border border-[#5f259f] font-nexa dark:border-purple-300 bg-white dark:bg-gray-800 dark:text-white rounded-lg transition-colors duration-300"
+            className="border border-[#5f259f] font-nexa dark:border-purple-300 bg-white dark:bg-gray-800 dark:text-white rounded-lg transition-transform duration-300 transform hover:scale-105 shadow-sm hover:shadow-md"
           >
             <CardHeader>
-              <CardTitle className=" text-[#5f259f] dark:text-white " >{activity.nom || "Nom non précisé"}</CardTitle>
+              <CardTitle className=" text-[#5f259f] dark:text-white ">
+                {activity.nom || "Nom non précisé"}
+              </CardTitle>
               <CardDescription>
                 {activity.type || "Type inconnu"}
               </CardDescription>
