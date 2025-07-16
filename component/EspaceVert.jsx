@@ -1,3 +1,6 @@
+// ici je choisis un filtre selon le type d'espace vert et la localisation
+// si aucun filtre n'est selectionné on affiche tous les espaces verts
+
 "use client";
 
 import { useEffect, useState } from "react";

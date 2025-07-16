@@ -1,3 +1,6 @@
+// Ici je choisi de filtré le nom des rues et les communes
+// si aucun filtre n'est selectionné on affiche toutes les fontaines
+
 "use client";
 
 import { useEffect, useState } from "react";
