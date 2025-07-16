@@ -25,7 +25,7 @@ export default function EspaceVertTab() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const load = async () => {
+    const getData = async () => {
       try {
         const data = await fetchEspaceVert();
         setEspaces(data?.results || []);
@@ -37,10 +37,10 @@ export default function EspaceVertTab() {
       }
     };
 
-    load();
+    getData();
   }, []);
 
-  console.log("Espaces verts fetched:", espaces);
+  // console.log("Espaces verts fetched:", espaces);
 
   if (loading) return <p>Chargement des espaces verts...</p>;
   if (error) return <p>{error}</p>;

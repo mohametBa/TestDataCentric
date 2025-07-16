@@ -16,11 +16,11 @@ export default function Dashboard() {
   ];
 
   return (
-    <div className="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300 min-h-screen px-4 py-6">
+    <div className="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-100 min-h-screen px-4 py-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 px-2">
           <h1 className="text-2xl sm:text-3xl font-bold font-nexa mb-2">
-            Lieux Frais
+            Que faire à paris cet été ?
           </h1>
           <p className="font-nexa text-sm sm:text-base text-gray-600 dark:text-gray-400">
             Trouvez des endroits frais près de chez vous pendant les vagues de chaleur

@@ -39,7 +39,7 @@ export default function ActivityTab() {
     getActivities();
   }, []);
 
-  console.log("Data fetched:", data);
+  // console.log("Data fetched:", data);
 
   useEffect(() => {
     const filteredData = data.filter((item) => {

@@ -2,7 +2,7 @@
 TestQuanticFactory
  ❄️ Paris Endroits Frais – Application Data-Centric
 
-Projet d'application web réalisée dans le cadre d’un test technique. Elle permet aux utilisateurs de trouver des endroits frais à Paris en s’appuyant sur les données open data de la Ville de Paris.
+Projet d'application web réalisée dans le cadre d’un test technique. Elle permet aux utilisateurs (Touristes, Habitants) de trouver des endroits frais à Paris en s’appuyant sur les données open data de la Ville de Paris.
 
 🎯 Objectif
 

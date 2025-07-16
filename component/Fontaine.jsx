@@ -21,18 +21,25 @@ export default function FontaineTab() {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [selectedCommune, setSelectedCommune] = useState("");
-const [error, setError] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const getFontaines = async () => {
-      const result = await fetchFontaines();
-      setData(result);
-      setLoading(false);
+      try {
+        const result = await fetchFontaines();
+        setData(result);
+      } catch (err) {
+        console.error("Erreur dans useFontaines :", err);
+        setError("Erreur lors de la récupération des données.");
+      } finally {
+        setLoading(false);
+      }
     };
+
     getFontaines();
   }, []);
 
-    console.log("Fontaines fetched:", data);
+  // console.log("Fontaines fetched:", data);
 
   const filteredData = data.filter((item) => {
     const voie = item.fields.voie?.toLowerCase() || "";
@@ -48,6 +55,10 @@ const [error, setError] = useState(null);
   ).sort();
 
   if (loading) return <p className="p-4">Chargement des fontaines...</p>;
+  if (error)
+    return (
+      <p className="text-red-600">Erreur de chargement des données : {error}</p>
+    );
 
   return (
     <div className="p-4 space-y-6 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
