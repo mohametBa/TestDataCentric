@@ -53,10 +53,7 @@ Toutes les données sont issues de [opendata.paris.fr](https://opendata.paris.fr
  ▶️ Installation
 
 ```bash
-git clone https://github.com/-------------------------------
-cd --------
-npm install
-npm run dev
+
 
 
 QUANTICFACTORY/
