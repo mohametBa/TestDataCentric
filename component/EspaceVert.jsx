@@ -51,6 +51,17 @@ export default function EspaceVertTab() {
   const types = [...new Set(espaces.map((e) => e.type).filter(Boolean))];
   const arrondissements = [...new Set(espaces.map((e) => e.arrondissement).filter(Boolean))];
 
+
+  // const filteredEspaces = espaces.filter((e) => {
+  // if (selectedType && e.type !== selectedType) {
+  //   return false;
+  // }
+  // if (selectedArrondissement && e.arrondissement !== selectedArrondissement) {
+  //   return false;
+  // }
+  // return true;
+  // })};
+
   const filteredEspaces = espaces.filter((e) => {
     return (
       (!selectedType || e.type === selectedType) &&
